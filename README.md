@@ -39,13 +39,14 @@ Xarvis is a lightweight automation system that posts scheduled tweets to X (form
 ---
 
 ## 🗂️ Folder Structure
-
+```
 📦Xarvis/
-┣ 📜 tweets.txt # Your tweet content
-┣ 📜 tweet.py # The script that posts to X
-┣ 📂 .github/workflows/
-┃ ┗ 📜 tweet.yml # GitHub Actions workflow
-┗ 📜 README.md # Project documentation
+┣ 📜 tweets.txt            # Your tweet content
+┣ 📜 tweet.py              # The script that posts to X
+┣ 📂 .github/workflows/    
+┃ ┗ 📜 tweet.yml           # GitHub Actions workflow
+┗ 📜 README.md             # Project documentation
+```
 
 
 ---
