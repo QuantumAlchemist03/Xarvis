@@ -98,10 +98,13 @@ Use crontab.guru to generate your desired CRON syntax.
 
 * Twitter/X Developer API 🐦  
 
-## 👨‍💻 Author
-QuantumAlchemist03
-Twitter: @AlifSathar
-GitHub: QuantumAlchemist03
+Find me on [Twitter 🐦](https://x.com/AlifSathar) |  
+Check my code on [GitHub 💻](https://github.com/QuantumAlchemist03)
+
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/YourHandle)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/QuantumAlchemist03)
+
+
 
 ## 📜 License
 
