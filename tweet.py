@@ -1,19 +1,23 @@
-import os
 import tweepy
+import random
+import os
 
-def main():
-    client = tweepy.Client(
-        consumer_key=os.environ['TWITTER_API_KEY'],
-        consumer_secret=os.environ['TWITTER_API_SECRET'],
-        access_token=os.environ['TWITTER_ACCESS_TOKEN'],
-        access_token_secret=os.environ['TWITTER_ACCESS_SECRET']
-    )
+# Authenticate with Twitter API
+auth = tweepy.OAuth1UserHandler(
+    os.environ['API_KEY'],
+    os.environ['API_SECRET'],
+    os.environ['ACCESS_TOKEN'],
+    os.environ['ACCESS_SECRET']
+)
+api = tweepy.API(auth)
 
-    # Your tweet text here
-    tweet_text = "Hello from GitHub Actions! 🚀 #AutomatedTweet"
+# Load tweets from tweets.txt
+with open("tweets.txt", "r", encoding="utf-8") as file:
+    tweet_lines = [line.strip() for line in file if line.strip()]
 
-    response = client.create_tweet(text=tweet_text)
-    print("Tweet posted:", response.data)
+# Pick a random tweet
+tweet = random.choice(tweet_lines)
 
-if __name__ == "__main__":
-    main()
+# Post the tweet
+api.update_status(tweet)
+print(f"Tweet posted: {tweet}")
